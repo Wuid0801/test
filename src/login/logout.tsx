@@ -1,6 +1,6 @@
 import { usePrivy } from '@privy-io/react-auth'
 
-export function RevokeDelegation() {
+export function Rogout() {
   const { user, logout } = usePrivy()
 
   const revoke = async () => {
@@ -19,9 +19,9 @@ export function RevokeDelegation() {
   return (
     <div>
       {user ? (
-        <button onClick={revoke}>위임 취소</button>
+        <button onClick={revoke}>로그아웃</button>
       ) : (
-        <p>위임을 취소하려면 로그인하세요</p>
+        <p>로그아웃하려면 로그인하세요</p>
       )}
     </div>
   )
