@@ -7,7 +7,7 @@ import { WalletOptions } from "./wallet-options";
 import { usePrivy, useWallets } from "@privy-io/react-auth";
 import { TestTransaction } from "./components/delegate"; // Delegate 테스트 컴포넌트
 import { RevokeDelegation } from "./components/revoke";
-import TestTransactionprivy from "./components/signtest";
+import SignTest from "./components/signtest";
 
 const queryClient = new QueryClient();
 function ConnectWallet() {
@@ -45,7 +45,7 @@ function App() {
                 <RevokeDelegation />
               </div>
             )}
-            <TestTransactionprivy/>
+            <SignTest/>
           </div>
         </div>
       </QueryClientProvider>

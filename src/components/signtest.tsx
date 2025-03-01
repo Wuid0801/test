@@ -1,6 +1,6 @@
 import { usePrivy } from "@privy-io/react-auth";
 
-function TestTransactionprivy() {
+function SignTest() {
   const { signMessage } = usePrivy();
 
   async function handleSign() {
@@ -20,4 +20,4 @@ function TestTransactionprivy() {
   );
 }
 
-export default TestTransactionprivy;
+export default SignTest;
